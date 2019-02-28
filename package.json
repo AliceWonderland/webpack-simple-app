@@ -7,16 +7,27 @@
   "scripts": {
     "build": "webpack",
     "dev": "npm run build -- --mode development --watch",
-    "prod": "npm run build -- --mode production"
+    "prod": "npm run build -- --mode production",
+    "debug": "npm run build -- --mode development --inspect --debug-brk",
+    "debugthis": "node --inspect --inspect-brk ./src/index.js",
+    "debugwebpack": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "dev:debug": "npm run debugwebpack -- --mode development",
+    "prod:debug": "npm run debugwebpack -- --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AliceWonderland/wepack-simple-app"
+    "url": "https://github.com/AliceWonderland/webpack-simple-app"
   },
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
 }

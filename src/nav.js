@@ -1,6 +1,2 @@
 // single primitive
-
-
-
-
-export default "nav";
+export default () => "nav";
