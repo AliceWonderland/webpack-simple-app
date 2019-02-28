@@ -9,9 +9,12 @@ Simple Node.js App with Webpack
 * ```node ./dist/bundle.js```
 
 ## Run in Browser
-* ```npm run dev```
+* ```npm run dev-watch```
 * Browse to http://localhost:8080/
 
+## Builds
+* ```npm run dev-build```
+* ```npm run prod-build```
 
 ## Debugging with Webpack
 * "debugthis": "node --inspect --inspect-brk ./src/index.js"
