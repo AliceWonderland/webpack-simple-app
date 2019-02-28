@@ -30,8 +30,8 @@ Simple Node.js App with Webpack
 * ```npm install --save-dev webpack-cli``` (must install this if using 4.0+)
 * ```npm install -D babel-loader @babel/core @babel/preset-env webpack``` (https://www.npmjs.com/package/babel-loader)
 * ```npm install  --save-dev webpack-dev-server``` (express web server/sockets)
-* ```npm install --save-dev html-webpack-plugin```
-* ```npm install webpack-merge --save-dev```
+* ```npm install --save-dev html-webpack-plugin``` (for browser usage)
+* ```npm install --save-dev webpack-merge``` (for env builds)
 
 ## Sean Larkin Webpack Workshop
 https://github.com/TheLarkInn/webpack-workshop-2018
