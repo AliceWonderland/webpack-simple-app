@@ -1,0 +1,19 @@
+{
+  "name": "webpack-simple-app",
+  "version": "1.0.0",
+  "description": "webpack performance demo",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AliceWonderland/wepack-simple-app"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
