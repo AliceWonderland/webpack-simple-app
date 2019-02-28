@@ -1,7 +1,8 @@
-const red = "red";
-const blue = "blue";
+const red = "color:red;";
+const blue = "color:blue;";
+
 const makeColorStyle = (color) => {
-    return `Color: ${color};`;
+    return `color: ${color};`;
 };
 
 // named exports at the bottom is a common standard

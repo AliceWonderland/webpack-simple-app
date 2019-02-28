@@ -1,5 +1,15 @@
-export const top = "top";
-export const bottom = "bottom";
+import { red, blue } from "./button-styles.js";
 
-// can export defaults inline
+const top = document.createElement('div');
+top.innerHTML = "Top of Footer";
+top.style = red;
 
+const bottom = document.createElement('div');
+bottom.innerHTML = "Bottom of Footer";
+bottom.style = blue;
+
+const footer = document.createElement('footer');
+footer.appendChild(top);
+footer.appendChild(bottom);
+
+export { top, bottom, footer };

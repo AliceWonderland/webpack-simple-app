@@ -1,4 +1,3 @@
-// take button label (str), return button ele
 // commonjs example
 /**
  * 
@@ -6,7 +5,11 @@
  * @returns {Element}
  */
 const makeButton = (buttonLabel) => {
-    return `Button: ${buttonLabel}`;
+    console.log(`Button: ${buttonLabel}`);
+
+    const button = document.createElement('button');
+    button.innerText = buttonLabel;
+    return button;
 };
 
 module.exports = makeButton;
