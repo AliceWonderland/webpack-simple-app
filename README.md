@@ -1,10 +1,8 @@
 # Webpack Mini App Demo
 Simple Node.js App with Webpack
 
-#### Requirements
-[Node 8+](https://nodejs.org/en/download/)
-
 ## Install
+* Make sure [Node 8+](https://nodejs.org/en/download/) is installed
 * ```git clone https://github.com/AliceWonderland/webpack-simple-app```
 * ```npm install```
 
