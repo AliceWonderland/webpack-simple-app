@@ -3,8 +3,12 @@ Simple Node.js App with Webpack
 
 ## Install
 * Make sure [Node 8+](https://nodejs.org/en/download/) is installed
+* Browse to the directory you'd like to download and install this project into by running the following commands in Terminal:
+* ```cd your-local-dir```
 * ```git clone https://github.com/AliceWonderland/webpack-simple-app```
+* ```cd webpack-simple-app```
 * ```npm install```
+
 
 ## Run in Console
 * ```node ./dist/bundle.js```
