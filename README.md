@@ -40,8 +40,10 @@ Simple Node.js App with Webpack
 * ```npm install --save-dev webpack-merge``` (for env builds)
 
 ## Create Your Own Project
-* ```npm init``` to in your new project folder
-* ```git init``` if you'd like to use Git + Github
+* ```mdkir my-new-project```
+* ```cd my-new-project```
+* ```npm init``` to initialize a new node project
+* ```git init``` if you'd like to use [Git + Github](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
 * Create your own custom Node project from there!
 
 ## Sean Larkin Webpack Workshop
