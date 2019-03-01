@@ -9,6 +9,5 @@ document.body.appendChild(button);
 document.body.appendChild(footer);
 
 console.log(
-    nav(), 
-    makeColorStyle('cyan')
+    nav()
 );

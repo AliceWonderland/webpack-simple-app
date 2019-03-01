@@ -1,6 +1,9 @@
 # Webpack Mini App Demo
 Simple Node.js App with Webpack
 
+#### Requirements
+[Node 8+](https://nodejs.org/en/download/)
+
 ## Install
 * ```git clone https://github.com/AliceWonderland/webpack-simple-app```
 * ```npm install```
@@ -32,6 +35,11 @@ Simple Node.js App with Webpack
 * ```npm install  --save-dev webpack-dev-server``` (express web server/sockets)
 * ```npm install --save-dev html-webpack-plugin``` (for browser usage)
 * ```npm install --save-dev webpack-merge``` (for env builds)
+
+## Create Your Own Project
+* ```npm init``` to in your new project folder
+* ```git init``` if you'd like to use Git + Github
+* Create your own custom Node project from there!
 
 ## Sean Larkin Webpack Workshop
 https://github.com/TheLarkInn/webpack-workshop-2018

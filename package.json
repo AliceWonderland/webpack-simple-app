@@ -2,7 +2,7 @@
   "name": "webpack-simple-app",
   "version": "1.0.0",
   "description": "webpack performance demo",
-  "author": "",
+  "author": "Alice Chuang",
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
