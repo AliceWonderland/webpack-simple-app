@@ -18,8 +18,9 @@ Simple Node.js App with Webpack
 * Browse to http://localhost:8080/
 
 ## Builds
-* ```npm run dev-build```
-* ```npm run prod-build```
+* ```npm run webpack``` (default)
+* ```npm run dev-build``` (development)
+* ```npm run prod-build``` (production)
 
 ## Debugging with Webpack
 * "debugthis": "node --inspect --inspect-brk ./src/index.js"
