@@ -2,7 +2,7 @@
 /**
  * 
  * @param {string} buttonLabel 
- * @returns {Element}
+ * @returns {Element} button
  */
 const makeButton = (buttonLabel) => {
     console.log(`Button: ${buttonLabel}`);

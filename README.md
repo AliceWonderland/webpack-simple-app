@@ -18,7 +18,7 @@ Simple Node.js App with Webpack
 * Browse to http://localhost:8080/
 
 ## Builds
-* ```npm run webpack``` (default)
+* ```npm run build``` (default)
 * ```npm run dev-build``` (development)
 * ```npm run prod-build``` (production)
 
