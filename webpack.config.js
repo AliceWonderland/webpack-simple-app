@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpackMerge = require('webpack-merge');
 const modeConfig = env => require(`./build-utils/webpack.${env}`)(env);
+// const presetConfig = require('./build-utils/presets/loadPresets.js'); //Use presets with webpack-bundle-analyzer, compression-webpack-plugin
 
 module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
     console.log(mode);
@@ -17,6 +18,13 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
             module: {
                 rules: [
                     {
+                        test: /\.css$/,
+                        use: [
+                            "style-loader",
+                            "css-loader"
+                        ]
+                    },
+                    {
                         test: /\.m?js$/,
                         exclude: /(node_modules|bower_components)/,
                         use: {
@@ -25,15 +33,32 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
                                 presets: ['@babel/preset-env']
                             }
                         }
+                    },
+                    {
+                        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
+                        loader: [
+                            {
+                                loader: 'url-loader',
+                                options:{
+                                    limit: 5000
+                                }
+                            }
+                        ]
                     }
                 ]
             },
-            "plugins": [
+            plugins: [
                 new HtmlWebpackPlugin(),
                 new webpack.ProgressPlugin()
-            ]
+            ],
+            devServer: {
+                contentBase: path.join(__dirname, 'dist'),
+                compress: true,
+                port: 8080
+            }
         },
         modeConfig(mode)
+        // presetConfig({ mode, presets })
     );
 };
 

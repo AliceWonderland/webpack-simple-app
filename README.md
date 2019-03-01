@@ -36,8 +36,15 @@ Simple Node.js App with Webpack
 * ```npm install --save-dev webpack-cli``` (must install this if using 4.0+)
 * ```npm install -D babel-loader @babel/core @babel/preset-env webpack``` ([Babel](https://www.npmjs.com/package/babel-loader))
 * ```npm install  --save-dev webpack-dev-server``` (express web server/sockets)
-* ```npm install --save-dev html-webpack-plugin``` (for browser usage)
-* ```npm install --save-dev webpack-merge``` (for env builds)
+* ```npm install --save-dev html-webpack-plugin``` (for browser usage + html to serve)
+* ```npm install --save-dev webpack-merge``` (for env builds + merging configs)
+### Optional Packages Used
+* ```npm install style-loader --save-dev```
+* ```npm install css-loader --save-dev ```
+* ```npm install url-loader --save-dev``` (for importing jpgs*)
+* ```npm install file-loader --save-dev``` (used with url-loader)
+* ```npm install typescript@next --save-dev```
+* ```npm install ts-loader --save-dev ```
 
 ## Create Your Own Project
 * ```mdkir my-new-project```
@@ -45,6 +52,9 @@ Simple Node.js App with Webpack
 * ```npm init``` to initialize a new node project
 * ```git init``` if you'd like to use [Git + Github](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
 * Create your own custom Node project from there!
+
+## Webpack Resources
+* All Configurations https://webpack.js.org/configuration/
 
 ## Sean Larkin Webpack Workshop
 https://github.com/TheLarkInn/webpack-workshop-2018

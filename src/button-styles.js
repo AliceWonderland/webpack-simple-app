@@ -2,7 +2,7 @@ const red = "color:red;";
 const blue = "color:blue;";
 
 const makeColorStyle = (color) => {
-    return `color: ${color};`;
+    return `color: ${color}; display: block;`;
 };
 
 // named exports at the bottom is a common standard

@@ -1,3 +1,4 @@
+import "./footer.css";
 import { red, blue } from "./button-styles.js";
 
 const top = document.createElement('div');

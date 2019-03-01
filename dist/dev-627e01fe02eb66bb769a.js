@@ -81,111 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/******/ ({
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _nav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
-/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _button_styles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
-/* harmony import */ var _image_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10);
-/* harmony import */ var _logo_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(11);
-/* harmony import */ var _logo_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_logo_jpg__WEBPACK_IMPORTED_MODULE_5__);
-
-
- //(can use require or import);
-
-
-
-
-var image = Object(_image_js__WEBPACK_IMPORTED_MODULE_4__["default"])(_logo_jpg__WEBPACK_IMPORTED_MODULE_5___default.a);
-var button = _button_js__WEBPACK_IMPORTED_MODULE_2___default()('Le Button');
-button.style = Object(_button_styles_js__WEBPACK_IMPORTED_MODULE_3__["makeColorStyle"])('pink');
-document.body.appendChild(image);
-document.body.appendChild(button);
-document.body.appendChild(_footer_js__WEBPACK_IMPORTED_MODULE_1__["footer"]);
-console.log(Object(_nav_js__WEBPACK_IMPORTED_MODULE_0__["default"])());
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// single primitive
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return "nav";
-});
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "top", function() { return top; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bottom", function() { return bottom; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "footer", function() { return footer; });
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _button_styles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
-
-
-var top = document.createElement('div');
-top.innerHTML = "Top of Footer";
-top.style = _button_styles_js__WEBPACK_IMPORTED_MODULE_1__["red"];
-var bottom = document.createElement('div');
-bottom.innerHTML = "Bottom of Footer";
-bottom.style = _button_styles_js__WEBPACK_IMPORTED_MODULE_1__["blue"];
-var footer = document.createElement('footer');
-footer.appendChild(top);
-footer.appendChild(bottom);
-
-
-/***/ }),
-/* 3 */
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/footer.css":
+/*!**************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/footer.css ***!
+  \**************************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-
-var content = __webpack_require__(4);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(6)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)(false);
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, "footer{\n    height: 100px;\n    width: 100%;\n    background-color: pink;\n}", ""]);
 
 
 
 /***/ }),
-/* 5 */
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -276,7 +196,12 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 6 */
+
+/***/ "./node_modules/style-loader/lib/addStyles.js":
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -345,7 +270,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(7);
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -680,7 +605,12 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 7 */
+
+/***/ "./node_modules/style-loader/lib/urls.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
 
@@ -775,7 +705,12 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 8 */
+
+/***/ "./src/button-styles.js":
+/*!******************************!*\
+  !*** ./src/button-styles.js ***!
+  \******************************/
+/*! exports provided: red, blue, makeColorStyle */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -797,7 +732,12 @@ var makeColorStyle = function makeColorStyle(color) {
 
 
 /***/ }),
-/* 9 */
+
+/***/ "./src/button.js":
+/*!***********************!*\
+  !*** ./src/button.js ***!
+  \***********************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
 // commonjs example
@@ -817,7 +757,72 @@ var makeButton = function makeButton(buttonLabel) {
 module.exports = makeButton;
 
 /***/ }),
-/* 10 */
+
+/***/ "./src/footer.css":
+/*!************************!*\
+  !*** ./src/footer.css ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./footer.css */ "./node_modules/css-loader/dist/cjs.js!./src/footer.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/*! exports provided: top, bottom, footer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "top", function() { return top; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bottom", function() { return bottom; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "footer", function() { return footer; });
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.css */ "./src/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _button_styles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button-styles.js */ "./src/button-styles.js");
+
+
+var top = document.createElement('div');
+top.innerHTML = "Top of Footer";
+top.style = _button_styles_js__WEBPACK_IMPORTED_MODULE_1__["red"];
+var bottom = document.createElement('div');
+bottom.innerHTML = "Bottom of Footer";
+bottom.style = _button_styles_js__WEBPACK_IMPORTED_MODULE_1__["blue"];
+var footer = document.createElement('footer');
+footer.appendChild(top);
+footer.appendChild(bottom);
+
+
+/***/ }),
+
+/***/ "./src/image.js":
+/*!**********************!*\
+  !*** ./src/image.js ***!
+  \**********************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -837,10 +842,67 @@ var makeImage = function makeImage(url) {
 /* harmony default export */ __webpack_exports__["default"] = (makeImage);
 
 /***/ }),
-/* 11 */
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _nav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav.js */ "./src/nav.js");
+/* harmony import */ var _footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.js */ "./src/footer.js");
+/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button.js */ "./src/button.js");
+/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _button_styles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button-styles.js */ "./src/button-styles.js");
+/* harmony import */ var _image_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./image.js */ "./src/image.js");
+/* harmony import */ var _logo_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logo.jpg */ "./src/logo.jpg");
+/* harmony import */ var _logo_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_logo_jpg__WEBPACK_IMPORTED_MODULE_5__);
+
+
+ //(can use require or import);
+
+
+
+
+var image = Object(_image_js__WEBPACK_IMPORTED_MODULE_4__["default"])(_logo_jpg__WEBPACK_IMPORTED_MODULE_5___default.a);
+var button = _button_js__WEBPACK_IMPORTED_MODULE_2___default()('Le Button');
+button.style = Object(_button_styles_js__WEBPACK_IMPORTED_MODULE_3__["makeColorStyle"])('pink');
+document.body.appendChild(image);
+document.body.appendChild(button);
+document.body.appendChild(_footer_js__WEBPACK_IMPORTED_MODULE_1__["footer"]);
+console.log(Object(_nav_js__WEBPACK_IMPORTED_MODULE_0__["default"])());
+
+/***/ }),
+
+/***/ "./src/logo.jpg":
+/*!**********************!*\
+  !*** ./src/logo.jpg ***!
+  \**********************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "cec39a4f103e99d9cc09554217dd2c74.jpg";
 
+/***/ }),
+
+/***/ "./src/nav.js":
+/*!********************!*\
+  !*** ./src/nav.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// single primitive
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return "nav";
+});
+
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=dev-627e01fe02eb66bb769a.js.map
